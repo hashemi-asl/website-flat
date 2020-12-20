@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 2000px;
+    font-family: IRANSans;
+}
+
+/**************************start the menu***********************************/
+
+@font-face {
+    font-family: IRANSans;
+    src: url("../fonts\eot\IRANSans(FaNum)_Medium.eot");
+    src: url("../fonts\ttf\IRANSansWeb(FaNum).ttf");
+    src: url("../fonts/woff/IRANSansWeb(FaNum).woff");
+    src: url("../fonts/woff2/IRANSansWeb(FaNum).woff2");
+
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper .menu {
+    width: inherit;
+    height: 50px;
+    position: fixed;
+}
+
+.wrapper .menu nav {
+    width: inherit;
+    height: inherit;
+}
+
+.wrapper .menu nav ul {
+    width: inherit;
+    height: inherit;
+    list-style: none;
+    background-color: rgba(157, 129, 137, 0.83);
+    text-align: center;
+}
+
+.wrapper .menu nav ul li {
+    width: 250px;
+    height: inherit;
+    display: inline-block;
+    /*background-color: #564592;*/
+    border-radius: 30px;
+
+}
+
+.wrapper .menu nav ul li a {
+    border-radius: 30px;
+    display: block;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    /*font-weight: 600;*/
+    /*background-color: #9d8189;*/
+    color: #d8e2dc;
+    /*text-shadow: 1.5px 1.5px 1.5px lightgray;*/
+    /*letter-spacing: 2px;*/
+    word-spacing: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+.wrapper .menu nav ul li a:hover {
+    background-color: #ffcdb2;
+    color: #6d597a;
+    /* font-weight: bold; */
+    font-size: 1.4em;
+
+}
+
+/**************************end the menu***********************************/
+
+
+/************************** start the parallax***********************************/
+.parallax {
+    width: 100%;
+    height: 625px;
+    padding-top: 100px;
+    background: url("../images/wallpaper4.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+
+.wrapper .parallax .slogan {
+    width: 800px;
+    background: rgba(154, 140, 152, 0.79);
+    color: whitesmoke;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(250, 202, 202, 0.74), -5px -5px 10px rgba(250, 202, 202, 0.74);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.wrapper .parallax .slogan h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.wrapper .parallax .slogan p {
+    text-align: justify;
+    line-height: 35px;
+    /*color: #3D2440;*/
+}
+
+/**************************end the parallax***********************************/
+
+
+/**************************start the news ***********************************/
+.wrapper .news {
+    width: 100%;
+    padding: 50px;
+    /*background: rgba(154, 140, 152, 0.79);*/
+}
+.wrapper .news .article{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px #e1e1e1, -5px -5px 10px  #e1e1e1;
+    border-radius: 10px;
+    background: rgba(234, 216, 233, 0.62);
+
+}
+.wrapper .news .article h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrapper .news .article p{
+    text-align: justify;
+    line-height: 30px;
+    font-size: 15px;
+    margin: 30px auto;
+}
+.wrapper .news .article a{
+    display: block;
+    height: 50px;
+    background: rgb(157, 141, 155);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(83, 53, 80);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/**************************end the news***********************************/
+
+
+
+/**************************start the contact***********************************/
+.wrapper .contact{
+    width: 100%;
+    padding: 50px;
+    background: rgba(157, 141, 155, 0.43);
+
+}
+
+.wrapper .contact .form{
+    width: 800px;
+    /*background: #808080;*/
+    padding: 30px;
+    margin: 0 auto;
+}
+.wrapper .contact .form h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(84, 64, 74);
+}
+.wrapper .contact .form form {
+    width: inherit;
+    padding: 15px;
+    /*background: rgba(157, 141, 155, 0.71);*/
+    text-align: center;
+
+}
+
+.wrapper .contact .form form input[type=text]{
+    width: 650px;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+.wrapper .contact .form form input[type=email]{
+    width: 650px;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+.wrapper .contact .form form textarea{
+    width: 650px;
+    height: 135px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    padding: 15px;
+    resize: none;
+}
+.wrapper .contact .form form input[type=submit]{
+    width: 300px;
+    height: 40px;
+    /*margin-bottom: 15px;*/
+    border-radius: 12px;
+    border: none;
+    /*padding: 15px;*/
+    font-size: 18px;
+    color: whitesmoke;
+    background: rgb(107, 76, 92);
+}
+
+/**************************end the contact***********************************/
+
+/**************************start the gallery***********************************/
+.wrapper .gallery{
+    width: 100%;
+    padding: 50px;
+}
+
+.wrapper .gallery h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(84, 64, 74);
+    margin-bottom: 40px;
+}
+.wrapper .gallery .image{
+    width: 33%;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.wrapper .gallery .image img{
+    width: 100%;
+    /*height: 800px;*/
+    border-radius: 10px;
+
+}
+/**************************end the gallery***********************************/
+
+/**************************end the footer***********************************/
+
+.wrapper .footer{
+    width: 100%;
+    padding: 50px;
+    background: rgba(157, 141, 155, 0.43);
+    text-align: justify;
+}
+.wrapper .footer li{
+    list-style: none;
+}
+.wrapper .footer ul li a ,p{
+    text-decoration: none;
+    color: rgb(84, 64, 74);
+    font-weight: bold;
+}
+
+
+
+/**************************end the footer***********************************/
